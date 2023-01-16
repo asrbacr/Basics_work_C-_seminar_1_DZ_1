@@ -37,3 +37,15 @@
 // Console.WriteLine("Максимальное число " + max);
 
 //____
+// Console.WriteLine("Задача для проверки является ли число чётным");
+// Console.Write("Введите число для проверки: ");
+// int number = Convert.ToInt32(Console.ReadLine());
+
+// if (number % 2 == 0)
+// {
+//     Console.WriteLine("Да, " + number + " - число чётное.");
+// }
+// else
+// {
+//     Console.WriteLine("Нет, " + number + " - число нечётное.");
+// }
