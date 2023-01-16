@@ -17,3 +17,23 @@
 //     Console.WriteLine("Числа равны");
 // }
 
+// ___
+// Console.WriteLine("Задача на проверку большего числа среди 3-ух");
+// Console.Write("Введите первое число: ");
+// int max = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите второе число: ");
+// int b = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите третье число: ");
+// int c = Convert.ToInt32(Console.ReadLine());
+
+// if (max < b)
+// {
+//     max = b;
+// }
+// if (max < c)
+// {
+//     max = c;
+// }
+// Console.WriteLine("Максимальное число " + max);
+
+//____
