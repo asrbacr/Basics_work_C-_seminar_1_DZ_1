@@ -80,19 +80,34 @@
 //         }
 //         break;
 
-// _____10
-Console.Write("Введите трёх-значное число, а программа выведет цифру разряд десятков: ");
-if (int.TryParse(Console.ReadLine(), out int ThreeDigitNumber));
-else
-     Console.WriteLine("Введено не верное число");
+//  case 10:
+// Console.Write("Введите трёх-значное число, а программа выведет цифру разряд десятков: ");
+// if (int.TryParse(Console.ReadLine(), out int ThreeDigitNumber));
+// else
+//      Console.WriteLine("Введено не верное число");
 
-if (ThreeDigitNumber / 1000 == 0 && ThreeDigitNumber / 100 > 0)
-{
-    int SredNumber = ThreeDigitNumber % 100 / 10;
-    Console.WriteLine("Цифра разряда десятков числа " + ThreeDigitNumber + " это: " + SredNumber);
-}
+// if (ThreeDigitNumber / 1000 == 0 && ThreeDigitNumber / 100 > 0)
+// {
+//     int SredNumber = ThreeDigitNumber % 100 / 10;
+//     Console.WriteLine("Цифра разряда десятков числа " + ThreeDigitNumber + " это: " + SredNumber);
+// }
+// else
+//     Console.WriteLine("Ошибка, число которое вы ввели не трёх-значное.");
+// break;
+
+//______13
+Console.Write("Введите число: ");
+if (int.TryParse(Console.ReadLine(), out int NumericForNumber));
 else
-    Console.WriteLine("Введите трёх-зачное число");
+    Console.WriteLine("Введено не число");
+
+if (NumericForNumber / 100 > 0)
+    Console.WriteLine("Третьей цифры нет.");
+else
+{
+    int ThreeNumeric = NumericForNumber % 1000 / 100;
+    Console.WriteLine(ThreeNumeric);
+}
 
 
 //     default:
