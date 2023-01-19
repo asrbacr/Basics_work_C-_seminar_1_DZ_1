@@ -101,13 +101,26 @@ if (int.TryParse(Console.ReadLine(), out int NumericForNumber));
 else
     Console.WriteLine("Введено не число");
 
-if (NumericForNumber / 100 > 0)
-    Console.WriteLine("Третьей цифры нет.");
-else
-{
-    int ThreeNumeric = NumericForNumber % 1000 / 100;
-    Console.WriteLine(ThreeNumeric);
-}
+bool a = NumericForNumber / 100 > 0;
+Console.WriteLine(a);
+// int b = NumericForNumber % 1000;
+int b = NumericForNumber.ToString().Count();
+Console.WriteLine(b);
+// Console.WriteLine(b / 100);
+double c = Math.Pow(10, b - 3);
+Console.WriteLine(c);
+double ThreeNumeric = NumericForNumber / c % 10;
+Console.WriteLine(ThreeNumeric);
+int d = Convert.ToUInt32(ThreeNumeric);
+Console.WriteLine(d);
+
+// if (NumericForNumber / 100 >= 0)
+//     Console.WriteLine("Третьей цифры нет.");
+// else
+// {
+//     int ThreeNumeric = NumericForNumber % 1000 / 100;
+//     Console.WriteLine("Третий символ числа " + NumericForNumber + " это: " + ThreeNumeric);
+// }
 
 
 //     default:
