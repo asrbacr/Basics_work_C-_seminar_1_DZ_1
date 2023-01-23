@@ -95,48 +95,47 @@
 //     Console.WriteLine("Ошибка, число которое вы ввели не трёх-значное.");
 // break;
 
-//______13
-// Console.Write("Введите число: ");
-// if (int.TryParse(Console.ReadLine(), out int NumericForNumber));
-// else
-//     Console.WriteLine("Введено не число");
-
-// bool a = NumericForNumber / 100 > 0;
-// Console.WriteLine(a);
-// // int b = NumericForNumber % 1000;
-// int b = NumericForNumber.ToString().Count();
-// Console.WriteLine(b);
-// // Console.WriteLine(b / 100);
-// double c = Math.Pow(10, b - 3);
-// Console.WriteLine(c);
-// double ThreeNumeric = NumericForNumber / c % 10;
-// Console.WriteLine(ThreeNumeric, Int32);
-// // int d = Convert.ToUInt32(ThreeNumeric);
-// // Console.WriteLine(d);
-
-// // if (NumericForNumber / 100 >= 0)
-// //     Console.WriteLine("Третьей цифры нет.");
-// // else
-// // {
-// //     int ThreeNumeric = NumericForNumber % 1000 / 100;
-// //     Console.WriteLine("Третий символ числа " + NumericForNumber + " это: " + ThreeNumeric);
-// // }
-
-//_______15
-Console.Write("Введите день недели для определения является ли это день выходным: ");
-if (int.TryParse(Console.ReadLine(), out int NumDayWeek)) ;
+// ______13
+Console.Write("Введите число: ");
+if (int.TryParse(Console.ReadLine(), out int NumericForNumber)) ;
 else
     Console.WriteLine("Введено не число");
 
-if (NumDayWeek <= 7)
-{
-    if (NumDayWeek == 6 || NumDayWeek == 7)
-        Console.WriteLine("Да, это выходной день.");
-    else
-        Console.WriteLine("Нет, это не выходной.");
-}
+// bool a = NumericForNumber / 100 > 0;
+// Console.WriteLine(a);
+// int b = NumericForNumber % 1000;
+// int b = NumericForNumber.ToString().Count();
+// Console.WriteLine(b);
+// Console.WriteLine(b / 100);
+// double c = Math.Pow(10, b - 3);
+// Console.WriteLine(c);
+// double ThreeNumeric = NumericForNumber / c % 10;
+// Console.WriteLine(ThreeNumeric);
+// int d = (int)ThreeNumeric;
+// Console.WriteLine("финальное " + (int)((NumericForNumber) / (Math.Pow(10, (NumericForNumber.ToString().Count()) - 3)) % 10));
+
+if (NumericForNumber / 100 <= 0)
+    Console.WriteLine("Третьей цифры нет.");
 else
-    Console.WriteLine("К сожалению, на неделе всего 7 дней.");
+{
+        Console.WriteLine("Третий символ числа " + NumericForNumber + " это: " + (int)((NumericForNumber) / (Math.Pow(10, (NumericForNumber.ToString().Count()) - 3)) % 10));
+}
+
+//  case 15:
+// Console.Write("Введите день недели для определения является ли это день выходным: ");
+// if (int.TryParse(Console.ReadLine(), out int NumDayWeek)) ;
+// else
+//     Console.WriteLine("Введено не число");
+
+// if (NumDayWeek <= 7)
+// {
+//     if (NumDayWeek == 6 || NumDayWeek == 7)
+//         Console.WriteLine("Да, это выходной день.");
+//     else
+//         Console.WriteLine("Нет, это не выходной.");
+// }
+// else
+//     Console.WriteLine("К сожалению, на неделе всего 7 дней.");
 
 
 //     default:
